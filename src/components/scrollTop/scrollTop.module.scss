@@ -1,0 +1,19 @@
+.scrollTop {
+  position: fixed;
+  z-index: 99;
+  bottom: 30px;
+  right: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-footer);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+
+  color: #fff;
+}

@@ -1,0 +1,47 @@
+.cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 46px;
+  background: var(--gradient-bar);
+  border-radius: 10px;
+
+  .content {
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 800;
+    }
+  }
+
+  .actions {
+    button {
+      padding: 14px 45px;
+      white-space: nowrap;
+      background-color: #000;
+
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 30px;
+
+      border: none;
+      outline: none;
+      border-radius: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cta {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

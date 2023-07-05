@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --font-family: "Manrope", sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+
+  --color-bg: #040c18;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+
+body {
+  background: var(--color-bg);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.gradientBg {
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    150deg,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 25%,
+    rgba(4, 12, 24, 1) 50%,
+    rgba(0, 40, 83, 1) 75%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    150deg,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 25%,
+    rgba(4, 12, 24, 1) 50%,
+    rgba(0, 40, 83, 1) 75%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    150deg,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 25%,
+    rgba(4, 12, 24, 1) 50%,
+    rgba(0, 40, 83, 1) 75%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040C18', endColorstr='#040C18', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    150deg,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 25%,
+    rgba(4, 12, 24, 1) 50%,
+    rgba(0, 40, 83, 1) 75%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    150deg,
+    rgba(4, 12, 24, 1) 0%,
+    rgba(0, 40, 83, 1) 25%,
+    rgba(4, 12, 24, 1) 50%,
+    rgba(0, 40, 83, 1) 75%,
+    rgba(4, 12, 24, 1) 100%
+  );
+}
+
+.gradientText {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionPadding {
+  padding: 4rem 6rem;
+}
+
+.sectionMargin {
+  margin: 4rem 6rem;
+}
+
+.scaleUpCenter {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+
+@keyframes scale-up-tr {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sectionMargin {
+    margin: 3rem;
+  }
+
+  .sectionPadding {
+    padding: 3rem;
+  }
+}
+
+.scale-up-tr {
+  -webkit-animation: scale-up-tr 0.2s ease-out both;
+  animation: scale-up-tr 0.2s ease-out both;
+}
+
+@media screen and (max-width: 500px) {
+  .sectionMargin {
+    margin: 2rem;
+  }
+
+  .sectionPadding {
+    padding: 2rem;
+  }
+}

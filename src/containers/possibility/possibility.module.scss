@@ -1,0 +1,51 @@
+.possibility {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .image {
+    max-width: 100%;
+    width: 546px;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    h1 {
+      font-size: 34px;
+      line-height: 45px;
+    }
+
+    .description {
+      color: var(--color-text);
+    }
+
+    .access {
+      color: var(--color-subtext);
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .possibility {
+    flex-direction: column;
+
+    .content {
+      gap: 10px;
+
+      h1 {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+  }
+}
